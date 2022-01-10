@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+.thumbnail {
+  border: 0;
+}
+
+#webcodecam-canvas,
+#scanned-img {
+  background-color: #2d2d2d;
+}
+
+#camera-select {
+  display: inline-block;
+  width: auto;
+}
+
+.btn {
+  margin-bottom: 2px;
+}
+
+.form-control {
+  height: 32px;
+}
+
+.h4,
+h4 {
+  width: auto;
+  float: left;
+  font-size: 20px;
+  line-height: 1.1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.controls {
+  float: right;
+  display: inline-block;
+}
+
+.well {
+  position: relative;
+  display: inline-block;
+}
+
+.panel-heading {
+  display: inline-block;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+pre {
+  border: 0;
+  border-radius: 0;
+  background-color: #333;
+  margin: 0;
+  line-height: 125%;
+  color: whitesmoke;
+}
+
+button {
+  outline: none !important;
+}
+
+.table-bordered {
+  color: #777;
+  cursor: default;
+}
+
+.table-bordered a:hover {
+  text-decoration: none;
+}
+
+.table-bordered th a {
+  float: right;
+  line-height: 3.49;
+}
+
+.table-bordered td a {
+  float: left;
+}
+
+.table-bordered th img {
+  float: left;
+}
+
+.table-bordered th,
+.table-bordered td {
+  vertical-align: middle !important;
+}
+
+.scanner-laser {
+  position: absolute;
+  margin: 40px;
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+}
+
+.laser-leftTop {
+  top: 0;
+  left: 0;
+  border-top: solid red 5px;
+  border-left: solid red 5px;
+}
+
+.laser-leftBottom {
+  bottom: 0;
+  left: 0;
+  border-bottom: solid red 5px;
+  border-left: solid red 5px;
+}
+
+.laser-rightTop {
+  top: 0;
+  right: 0;
+  border-top: solid red 5px;
+  border-right: solid red 5px;
+}
+
+.laser-rightBottom {
+  bottom: 0;
+  right: 0;
+  border-bottom: solid red 5px;
+  border-right: solid red 5px;
+}
+
+#webcodecam-canvas {
+  background-color: #272822;
+}
+#scanned-QR {
+  word-break: break-word;
+}
+
+/* PDF Editor */
+#documentRender {
+  border: 1px solid black;
+  width: fit-content;
+  max-width: min-content;
+  margin: 0 auto;
+}
+
+#drag {
+  position: absolute;
+}
+
+canvas {
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid #747979;
+  padding: 8px 16px;
+  margin: 24px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.detail-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.overlay p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img.rounded-circle {
+  cursor: pointer;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+img.rounded-circle:hover ~ .overlay {
+  opacity: 1;
+}
