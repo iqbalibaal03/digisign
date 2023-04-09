@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .alert {
+    @apply relative p-4 mb-4 text-inherit text-sm bg-transparent border rounded-md;
+  }
+
+  .alert-danger {
+    @apply text-red-100 bg-red-700 border-red-100 dark:text-red-700 dark:bg-red-100 dark:border-red-700;
+  }
+}
