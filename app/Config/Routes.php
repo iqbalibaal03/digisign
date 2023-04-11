@@ -33,6 +33,12 @@ $routes->get('/', 'Home::index');
 $routes->group('documents', static function ($routes) {
     $routes->get('/', 'DocumentController::index');
 });
+$routes->group('upload', static function ($routes) {
+    $routes->get('self-sign', 'UploadController::selfSign', ['as' => 'upload/self-sign']);
+    $routes->get('sign-and-share', 'UploadController::signAndShare',  ['as' => 'upload/sign-and-share']);
+    $routes->get('share-only', 'UploadController::shareOnly', ['as' => 'upload/share-only']);
+});
+
 
 service('auth')->routes($routes);
 

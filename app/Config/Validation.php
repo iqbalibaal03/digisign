@@ -46,14 +46,14 @@ class Validation extends BaseConfig
     // Rules For Registration
     //--------------------------------------------------------------------
     public $registration = [
-        'id_number' => [
-            'label' => 'Nomor Identitas',
+        'username' => [
+            'label' => 'Username',
             'rules' => [
                 'required',
                 'max_length[30]',
                 'min_length[3]',
                 'regex_match[^[0-9]*$]',
-                'is_unique[users.id_number]',
+                'is_unique[users.username]',
             ],
         ],
         'email' => [

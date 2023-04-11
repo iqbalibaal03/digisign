@@ -1,3 +1,5 @@
+import focusTrap from './/focus-trap'
+
 export default () => {
   function getThemeFromLocalStorage() {
     // if user already changed the theme, use it

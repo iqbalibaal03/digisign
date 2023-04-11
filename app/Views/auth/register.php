@@ -34,7 +34,7 @@
             <?= csrf_field() ?>
             <label class="block text-sm">
                 <span class="text-gray-700 dark:text-gray-400">ID Number</span>
-                <input type="text" name="id_number" pattern="^[0-9]*$" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-900 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300   dark:focus:ring-gray-500 dark:focus:border-gray-500 rounded transition" placeholder="1234567890" />
+                <input type="text" name="username" pattern="^[0-9]*$" class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-900 focus:border-purple-400 focus:outline-none focus:ring focus:ring-purple-400 dark:text-gray-300   dark:focus:ring-gray-500 dark:focus:border-gray-500 rounded transition" placeholder="1234567890" />
             </label>
             <label class="block mt-4 text-sm">
                 <span class="text-gray-700 dark:text-gray-400">Email</span>
